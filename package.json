@@ -1,0 +1,15 @@
+{
+  "name": "angular-tdd-tutsplus",
+  "version": "1.0.0",
+  "description": "angular tdd tutorial practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0"
+  }
+}
