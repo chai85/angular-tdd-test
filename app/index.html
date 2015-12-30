@@ -1,8 +1,16 @@
 <head>
     <script src=bower_components/angular/angular.js></script>
+
 </head>
 
-<body ng-app=AddressBooka>
+<body ng-app=AddressBook>
     Hello World!
+    <div ng-controller=ContactController>
+        <ul ng-repeat="contact in contacts">
+            <li>{{contact.name}}
+                <avatar name="contact.name"></avatar>
+            </li>
+        </ul>
+    </div>
     <script src="main.js"></script>
 </body>
