@@ -1,0 +1,23 @@
+{
+  "name": "angular-tdd-tutsplus",
+  "version": "1.0.0",
+  "description": "angular tdd tutorial practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.10.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "karma-mocha": "^0.2.1",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "mocha": "^2.3.4",
+    "phantomjs": "^1.9.19"
+  }
+}
