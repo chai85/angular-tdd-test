@@ -18,7 +18,11 @@ describe("Address Book App", function () {
         })
 
         it("should call http get", function () {
-            $httpBackend.expectGET("http://localhost:9001/contacts").respond(200, []);
+            $httpBackend.expectGET("http://localhost:9001/contacts").respond(200, [{
+                name: "Edward"
+            }, {
+                name: "Chaitu"
+            }]);
             $httpBackend.flush();
         })
     })

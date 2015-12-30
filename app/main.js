@@ -2,8 +2,8 @@ angular.module("AddressBook", [])
     .service("contactService", function ($http) {
         var contactService = this;
         contactService.contacts = [];
-        $http.get("http://localhost:9001/contacts").then(
-            function (res) {
+        $http.get("http://localhost:9001/contacts")
+            .then(function (res) {
                 console.log(res);
                 while (res.data[0]) {
                     console.log("res: " + res.data[0]);
