@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var browserSync = require('browser-sync');
 var Server = require('karma').Server;
 var server = require('gulp-live-server');
+var protractor = require("gulp-protractor").protractor;
 
 gulp.task('server', function () {
     var live = new server('express.js');
@@ -63,3 +64,11 @@ gulp.task('serve-coverage', ['test-browser'], function () {
         .on('change', browserSync.reload);
 
 });
+
+gulp.task('protractor', ['serve'], function (done) {
+    gulp.src("test/e2e/*.spec.js")
+        .pipe(protractor({
+            configFile: "test/protractor.config.js",
+            args: ['--baseUrl', "localhost:8000"]
+        })).on('end', done);
+})
